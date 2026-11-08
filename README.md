@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # afterimages
 
 A new Flutter project.
@@ -15,3 +16,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# AfterImagesApplication
+This is a Flutter application named "After Images", which helps users to record their feelings about the pictures taken in their albums. Write down something helps you better rememeber every meaningful moment.
+>>>>>>> origin/main
