@@ -11,6 +11,7 @@ class PhotoDetailScreen extends StatefulWidget {
 
 class _PhotoDetailScreenState extends State<PhotoDetailScreen> {
   final TextEditingController _controller = TextEditingController();
+  String _savedText = '';
 
   @override
   void dispose() {
@@ -37,10 +38,14 @@ class _PhotoDetailScreenState extends State<PhotoDetailScreen> {
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                debugPrint(_controller.text);
+                setState(() {
+                  _savedText = _controller.text;
+                });
               },
               child: const Text('Save'),
             ),
+            const SizedBox(height: 16),
+            Text('Saved Text: $_savedText'),
           ],
         ),
       ),
